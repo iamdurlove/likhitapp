@@ -1,11 +1,10 @@
-import 'dart:ui';
+// ignore_for_file: prefer_const_constructors, file_names, avoid_unnecessary_containers, avoid_print,
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MaterialApp(
-    title: "Quiz Screen",
+    title: "ExamScreen",
     home: ExamScreen(),
   ));
 }

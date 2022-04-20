@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:likhitapp/DrawerScreen.dart';
 import 'package:likhitapp/ExamScreen.dart';
+import 'package:likhitapp/QuestionScreen.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -56,16 +57,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ),
                 ),
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => QuestionScreen()));
+              },
             ),
             InkWell(
               child: Container(
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: NetworkImage(
-                    "https://p.kindpng.com/picc/s/242-2423250_exam-png-transparent-image-exam-png-png-download.png",
-                  )),
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.teal,
                   boxShadow: const [
