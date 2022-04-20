@@ -23,100 +23,294 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Likhit App"),
+        title: Text("लिखित एप"),
+        centerTitle: true,
         backgroundColor: Colors.teal,
         shadowColor: Colors.black,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(40),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        padding: const EdgeInsets.only(top: 50, left: 30, right: 30),
+        child: Column(
           children: [
-            InkWell(
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.teal,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black87,
-                      blurRadius: 5,
-                      offset: Offset(2, 5),
-                    )
-                  ],
-                ),
-                width: 90,
-                height: 90,
-                child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Text(
-                    "प्रश्न उत्तर",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "प्रश्न उत्तर",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => QuestionScreen()));
+                  },
                 ),
-              ),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => QuestionScreen()));
-              },
+                InkWell(
+                  child: Container(
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "परीक्षा दिनुहोस्",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ExamScreen()));
+                  },
+                ),
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "ट्रायल​",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  onTap: () {},
+                ),
+              ],
             ),
-            InkWell(
-              child: Container(
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.teal,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black87,
-                      blurRadius: 5,
-                      offset: Offset(2, 5),
-                    )
-                  ],
-                ),
-                width: 90,
-                height: 90,
-                child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Text(
-                    "परीक्षा दिनुहोस्",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Color.fromARGB(255, 14, 12, 12)),
+            SizedBox(height: 40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "प्रश्न उत्तर",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => QuestionScreen()));
+                  },
                 ),
-              ),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => ExamScreen()));
-              },
+                InkWell(
+                  child: Container(
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "परीक्षा दिनुहोस्",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ExamScreen()));
+                  },
+                ),
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "ट्रायल​",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  onTap: () {},
+                ),
+              ],
             ),
-            InkWell(
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.teal,
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black87,
-                      blurRadius: 5,
-                      offset: Offset(2, 5),
-                    )
-                  ],
-                ),
-                width: 90,
-                height: 90,
-                child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Text(
-                    "ट्रायल​",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.white),
+            SizedBox(height: 40),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "प्रश्न उत्तर",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => QuestionScreen()));
+                  },
                 ),
-              ),
-              onTap: () {},
+                InkWell(
+                  child: Container(
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "परीक्षा दिनुहोस्",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ExamScreen()));
+                  },
+                ),
+                InkWell(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.teal,
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.black87,
+                          blurRadius: 5,
+                          offset: Offset(2, 5),
+                        )
+                      ],
+                    ),
+                    width: 90,
+                    height: 90,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text(
+                        "ट्रायल​",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                  onTap: () {},
+                ),
+              ],
             ),
           ],
         ),

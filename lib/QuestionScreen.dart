@@ -3,6 +3,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:likhitapp/WelcomeScreen.dart';
 import 'package:likhitapp/jsonParse.dart';
 import 'package:flutter/services.dart' as rootBundle;
 
@@ -24,6 +25,11 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("प्रश्नको प्रकार हरु "),
+        backgroundColor: Colors.teal,
+      ),
       body: FutureBuilder(
         future: ReadJsonData(),
         builder: (context, data) {
@@ -34,23 +40,25 @@ class _QuestionScreenState extends State<QuestionScreen> {
               return Card(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 32, bottom: 32, left: 20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        (items[index].question.toString()),
-                        style: TextStyle(
-                          fontSize: 22,
-                          fontWeight: FontWeight.bold,
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => WelcomeScreen()));
+                    },
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          (items[index].question.toString()),
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      Text(
-                        (items[index].correctAnswerIndex.toString()),
-                        style: TextStyle(
-                          fontSize: 20,
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               );
