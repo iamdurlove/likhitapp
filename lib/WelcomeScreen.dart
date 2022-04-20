@@ -33,7 +33,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         child: Column(
           children: [
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 InkWell(
                   child: Container(
@@ -48,8 +48,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         )
                       ],
                     ),
-                    width: 90,
-                    height: 90,
+                    width: 120,
+                    height: 120,
                     child: Align(
                       alignment: Alignment.bottomCenter,
                       child: Text(
@@ -80,8 +80,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         )
                       ],
                     ),
-                    width: 90,
-                    height: 90,
+                    width: 120,
+                    height: 120,
                     child: Align(
                       alignment: Alignment.bottomCenter,
                       child: Text(
@@ -96,37 +96,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         MaterialPageRoute(builder: (context) => ExamScreen()));
                   },
                 ),
-                InkWell(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.teal,
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Colors.black87,
-                          blurRadius: 5,
-                          offset: Offset(2, 5),
-                        )
-                      ],
-                    ),
-                    width: 90,
-                    height: 90,
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text(
-                        "ट्रायल​",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  onTap: () {},
-                ),
               ],
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 60),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 InkWell(
@@ -142,8 +116,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         )
                       ],
                     ),
-                    width: 90,
-                    height: 90,
+                    width: 120,
+                    height: 120,
                     child: Align(
                       alignment: Alignment.bottomCenter,
                       child: Text(
@@ -174,8 +148,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         )
                       ],
                     ),
-                    width: 90,
-                    height: 90,
+                    width: 120,
+                    height: 120,
                     child: Align(
                       alignment: Alignment.bottomCenter,
                       child: Text(
@@ -190,37 +164,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         MaterialPageRoute(builder: (context) => ExamScreen()));
                   },
                 ),
-                InkWell(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.teal,
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Colors.black87,
-                          blurRadius: 5,
-                          offset: Offset(2, 5),
-                        )
-                      ],
-                    ),
-                    width: 90,
-                    height: 90,
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text(
-                        "ट्रायल​",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  onTap: () {},
-                ),
               ],
             ),
-            SizedBox(height: 40),
+            SizedBox(height: 60),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 InkWell(
@@ -236,8 +184,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         )
                       ],
                     ),
-                    width: 90,
-                    height: 90,
+                    width: 120,
+                    height: 120,
                     child: Align(
                       alignment: Alignment.bottomCenter,
                       child: Text(
@@ -268,8 +216,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         )
                       ],
                     ),
-                    width: 90,
-                    height: 90,
+                    width: 120,
+                    height: 120,
                     child: Align(
                       alignment: Alignment.bottomCenter,
                       child: Text(
@@ -283,32 +231,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => ExamScreen()));
                   },
-                ),
-                InkWell(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.teal,
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Colors.black87,
-                          blurRadius: 5,
-                          offset: Offset(2, 5),
-                        )
-                      ],
-                    ),
-                    width: 90,
-                    height: 90,
-                    child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Text(
-                        "ट्रायल​",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  onTap: () {},
                 ),
               ],
             ),
