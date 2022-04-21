@@ -18,6 +18,7 @@ class DrawerScreen extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: const <Widget>[
           UserAccountsDrawerHeader(
+            arrowColor: Colors.teal,
             accountName: Text("Durlav Parajuli"),
             accountEmail: Text("mail@durlavparajuli.com.np"),
             currentAccountPicture: CircleAvatar(),

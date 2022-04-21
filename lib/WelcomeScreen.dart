@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:likhitapp/DrawerScreen.dart';
 import 'package:likhitapp/ExamScreen.dart';
-import 'package:likhitapp/QuestionScreen.dart';
+import 'package:likhitapp/QuestionCategory.dart';
+import 'package:likhitapp/appInfo.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -240,8 +241,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       drawer: DrawerScreen(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.home),
-        backgroundColor: Colors.red,
+        child: Icon(Icons.info),
+        backgroundColor: Colors.teal,
       ),
     );
   }
